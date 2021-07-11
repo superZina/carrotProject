@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="menu" reuseIdentifier="menu" id="gTV-IL-0wX" customClass="menuCell" customModule="carrotProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="107" height="96"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="107" height="96"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FuW-eC-pi0">
+                        <rect key="frame" x="0.0" y="0.0" width="107" height="96"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sOK-LB-mvG">
+                                <rect key="frame" x="28.5" y="10" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="CSU-X7-f0s"/>
+                                    <constraint firstAttribute="height" constant="50" id="sR3-De-T31"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHu-UM-64v">
+                                <rect key="frame" x="37" y="62" width="33" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.24037864984888024" green="0.24037864984888024" blue="0.24037864984888024" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="HHu-UM-64v" secondAttribute="bottom" constant="10" id="0g5-7b-zYC"/>
+                            <constraint firstItem="sOK-LB-mvG" firstAttribute="centerX" secondItem="FuW-eC-pi0" secondAttribute="centerX" id="6DU-RI-GNr"/>
+                            <constraint firstItem="HHu-UM-64v" firstAttribute="top" secondItem="sOK-LB-mvG" secondAttribute="bottom" constant="2" id="HoX-0f-hcH"/>
+                            <constraint firstItem="sOK-LB-mvG" firstAttribute="top" secondItem="FuW-eC-pi0" secondAttribute="top" constant="10" id="PHw-zJ-Zmd"/>
+                            <constraint firstItem="HHu-UM-64v" firstAttribute="centerX" secondItem="FuW-eC-pi0" secondAttribute="centerX" id="Qcf-ff-xIu"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="FuW-eC-pi0" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="BP6-gD-9Rl"/>
+                <constraint firstAttribute="trailing" secondItem="FuW-eC-pi0" secondAttribute="trailing" id="Prr-LC-5iH"/>
+                <constraint firstAttribute="bottom" secondItem="FuW-eC-pi0" secondAttribute="bottom" id="RZT-Om-EjC"/>
+                <constraint firstItem="FuW-eC-pi0" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="f9P-cd-5kq"/>
+            </constraints>
+            <size key="customSize" width="107" height="96"/>
+            <connections>
+                <outlet property="icon" destination="sOK-LB-mvG" id="HKX-93-z67"/>
+                <outlet property="innerView" destination="FuW-eC-pi0" id="wBH-mY-no0"/>
+                <outlet property="menuName" destination="HHu-UM-64v" id="MKm-7n-Sik"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="128"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
