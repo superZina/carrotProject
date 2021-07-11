@@ -155,14 +155,14 @@ class myLocationViewController: UIViewController {
         return collectionView
     }()
     
-    lazy var businessView:UIView = {
+    let businessView:UIView = {
         let view = UIView()
         view.backgroundColor = .businessBlue
         view.layer.cornerRadius = 8
         return view
     }()
     
-    lazy var businessLabel :UILabel = {
+    let businessLabel :UILabel = {
        let label = UILabel()
         label.text = "사장님이신가요? 단골을 모아보세요!"
         label.font = .systemFont(ofSize: 18, weight: .heavy)
@@ -170,7 +170,7 @@ class myLocationViewController: UIViewController {
         return label
     }()
     
-    lazy var businessProfileButton : UIButton = {
+    let businessProfileButton : UIButton = {
         let button = UIButton()
         button.setTitle("비즈프로필 만들기", for: .normal)
         button.titleLabel?.font = .systemFont(ofSize: 14)
